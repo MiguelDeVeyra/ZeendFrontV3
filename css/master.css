@@ -315,6 +315,13 @@ html,body
   font-weight: bold;
 }
 
+@media (max-width:500px) {
+  .signup__head{
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+}
+
 .imgh{
   width: 100%;
 
@@ -481,7 +488,9 @@ footer.page-footer a{
   color: #000!important;
 }
 
-
+.mr__dl{
+  margin-right: 40px;
+}
 
 
 
