@@ -1,0 +1,559 @@
+/* DO NOT REMOVE! */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    letter-spacing: .02em;
+}
+
+/* Navbar  */
+.navbar-light{
+  background: #FFF !important;
+}
+
+@media (min-width:1200px) {
+    .navbar{
+      height: 7vh;
+    }
+    .navbar-brand{
+      margin-left: 12vh;
+    }
+}
+
+.nav__logo{
+  margin-top: 5px;
+}
+
+.btn{
+  box-shadow: none !important;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  font-weight: 300;
+  padding: 10px;
+  font-size: .9em;
+}
+
+.btn:hover{
+  background: #f2f2f2
+}
+
+.btn.high{
+  background: #EC614B;
+  color:#FFF;
+}
+
+@media (max-width:1200px) {
+  .btn.high{
+    background: #EC614B;
+    color:#FFF;
+    display: block;
+    text-align: left !important;
+  }
+  .btn.reg{
+    display: block;
+    text-align: left !important;
+  }
+}
+
+/* Css for main */
+.main{
+  font-family: "Poppins";
+}
+
+
+/* main mobile css */
+.main{
+  margin-top: 2vh;
+}
+
+.hero h2{
+  font-weight: bold;
+  font-size: 6vh;
+  margin-left: 7vw;
+  margin-top: 30%;
+  margin-bottom: 2vh;
+}
+
+.hero p{
+  margin-left: 7vw;
+  font-size: 1.3em;
+  margin-bottom: 2vh;
+}
+
+.btn.sign{
+  background: #EC614B;
+  color: #FFF;
+  text-align: left;
+  margin-left: 7vw;
+}
+@media (max-width:1300px) {
+  .hero h2{
+    font-size: 4vh;
+  }
+
+  .hero p{
+    font-size: 1em;
+  }
+}
+@media (max-width:1050px) {
+  .hero h2{
+    font-size: 2em;
+    margin-bottom: 1vh;
+  }
+
+  .hero p{
+    font-size: .8em;
+    margin-bottom: 1vh;
+  }
+
+  .btn.sign{
+    background: #EC614B;
+    color: #FFF;
+    text-align: left;
+    width: 18vw;
+    margin-left: 7vw;
+  }
+}
+
+.hero__header__mob{
+  margin-left: 10vw;
+  font-weight: 500;
+}
+
+.hero__mob h2{
+  margin-left: 4vw;
+  font-weight: 600;
+  font-size: 2.3em;
+  margin-bottom: 2vh
+}
+
+.hero__mob p{
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+}
+
+.hero__mob img{
+  height: 40vh;
+  margin-left: 20px;
+  width:100%;
+}
+
+.btn.sign__mob{
+  background: #EC614B;
+  color: #FFF;
+  margin-left: 4vw;
+  font-weight: 550;
+  width: 47vw;
+  text-align: left;
+}
+@media (max-width:998px) {
+
+  .btn.sign__mob{
+    background: #EC614B;
+    color: #FFF;
+    text-align: left;
+    width: 23vw;
+    margin-left: 4vw;
+  }
+}
+
+@media (max-width:500px) {
+
+  .btn.sign__mob{
+    background: #EC614B;
+    color: #FFF;
+    text-align: left;
+    width: 50vw;
+    margin-left: 4vw;
+  }
+}
+
+.img__hero{
+  margin-top: 5%;
+}
+
+/* Why you need a web CSS */
+
+.why{
+  margin-top: 10vh;
+}
+
+.why h2{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  font-weight: 900;
+  font-size: 4vh;
+}
+
+.card{
+  width: 80%;
+  margin:auto;
+  box-shadow: none;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+@media (max-width:780px){
+  .card{
+    margin-bottom: 2vh;
+  }
+
+}
+
+@media (max-width:1050px) {
+  .why h2{
+    font-size: 2em;
+  }
+}
+
+.card-title{
+  margin-top: 0;
+}
+
+.card-footer{
+  background: #fff;
+  border: none;
+}
+
+.btn.card{
+  margin-top: 2vh;
+  background: #FFF;
+  color: #EC614B;
+}
+.card-title.ad{
+  font-size: 1.3em;
+}
+
+.card-title.at{
+  font-size: 1.35em;
+}
+
+@media (max-width:800px){
+  .card-title.at{
+    font-size: 1.2em;
+  }
+}
+
+@media(max-width:1050px){
+  .btn.opn{
+    margin-top: 25%;
+  }
+  .btn.at{
+    margin-top: 20%;
+  }
+}
+
+/* modal CSS */
+
+.modalimg{
+  height: 300px;
+}
+
+@media (max-width:400px) {
+  .modalimg{
+    height: 150px;
+  }
+}
+
+/* Zeend Analytics */
+.number h2{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-weight: 900;
+  font-size: 4vh;
+}
+
+.numsdisp{
+  text-align: center;
+}
+.bpn{
+  font-size: 3vh;
+  font-weight: 900;
+}
+
+.vert{
+  height: 100px;
+  vertical-align: middle;
+}
+
+.number small{
+  font-size: 2vh;
+}
+
+@media (max-width:500px){
+  .bpn{
+    font-size: 4vh;
+    font-weight: 900;
+  }
+  .vert{
+    height: 80px;
+    vertical-align: middle;
+  }
+
+  .number small{
+    font-size: 1.3em;
+  }
+
+  .number h2{
+    margin-bottom: 5vh;
+  }
+
+}
+
+/* carousel steps css */
+
+.signup__head{
+  text-align: center;
+  font-size: 3vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+.imgh{
+  width: 100%;
+
+}
+
+@media (max-width:770px) {
+  .imgh{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+.row {
+	margin-bottom:30px;
+}
+.row:last-child{
+	margin-bottom:0;
+}
+
+/* Remove for production */
+/* .row [class*="col-"] {
+  border: 1px solid red;
+} */
+.row [class*="col-"]  {
+	margin-bottom:15vh;
+}
+
+@media (max-width:600px) {
+  .row [class*="col-"]  {
+  	margin-bottom:6vh;
+  }
+}
+.step__head{
+  font-size: 1.9em;
+  margin-top: 5%;
+  font-weight: bold;
+}
+@media (max-width:1050px){
+  .step__head{
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width:770px){
+  .step__head{
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width:600px){
+  .step__head{
+    margin-top: 0%;
+  }
+}
+
+.cong{
+  color: #EC614B;
+}
+
+.steps__sec ul {
+  list-style: none;
+}
+
+.steps__sec ul li::before {
+  /* \2022 is the CSS Code/unicode for a bullet */
+  content: "\2022";
+  color: #EC614B;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-bottom: 1vh;
+}
+
+.steps__sec ul ul li::before{
+  content: "-";
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width:750px) {
+  .congi{
+    margin-top: 30%;
+  }
+}
+
+.btn-cta{
+  border-radius: 50px;
+  background: #EC614B;
+  color: #FFF;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-right: 5%;
+  letter-spacing: .05em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-cta:hover{
+  background: #EC614B;
+  color: #FFF;
+
+}
+
+.cta__head{
+  text-align: center;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+/* Footer Css */
+.page-footer{
+  background: #f2f2f2!important;
+  color: black!important;
+}
+
+footer.page-footer a{
+  color: #000;
+}
+
+.dl__cont{
+  vertical-align: middle;
+}
+
+.dl__head{
+  font-weight: bold;
+  font-size: 1em;
+}
+.cntc input[type=text]{
+  color: #000;
+}
+
+.cntc  input[type=email]{
+  color: #000;
+}
+
+.cntc textarea{
+  color: #000!important;
+}
+
+.md-form {
+  border-bottom: none!important;
+}
+
+.parts .row [class*="col-"] {
+    margin-bottom: 2vh;
+}
+
+.parts{
+  text-align: center;
+}
+
+.row [class*="col-"] {
+    margin-bottom: 5vh;
+}
+
+.footer-copyright {
+  background: #f2f2f2!important;
+  color: #000!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
