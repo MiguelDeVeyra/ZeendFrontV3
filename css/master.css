@@ -336,7 +336,7 @@ html,body
 }
 
 /* Remove for production */
-/* .row [class*="col-"] {
+ /* .row [class*="col-"] {
   border: 1px solid red;
 } */
 .row [class*="col-"]  {
