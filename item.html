@@ -71,7 +71,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="profile.html" class="btn waves-effect reg"> <img src="imgs/angels.jpg" height="25px"> Emperor Miguel</a>
+            <a href="#" class="btn waves-effect reg"> <img src="imgs/angels.jpg" height="25px"> Emperor Miguel</a>
           </li>
           <li class="nav-item">
             <a href="#" class="btn waves-effect high">Log Out</a>
@@ -300,70 +300,93 @@
     <main class="reg_bg main_cont store__conts">
       <!-- Regions Section section -->
       <section>
-        <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg" class="store_banner" alt="Responsive image">
-        <div class="container-fluid store__container mt-3 ">
-          <h1 class="active__category__header">Active Category</h1>
-          <div class="row store">
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="item.html">
-                <div class="store_item_card">
-                  <img src="imgs/angels.jpg" class="itemimg">
-                  <span class="item_name">item name</span><br>
-                  <p class="item_price">100 PHP</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="item.html">
-                <div class="store_item_card">
-                  <img src="imgs/angels.jpg" class="itemimg">
-                  <span class="item_name">item name</span><br>
-                  <p class="item_price">100 PHP</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="item.html">
-                <div class="store_item_card">
-                  <img src="imgs/angels.jpg" class="itemimg">
-                  <span class="item_name">item name</span><br>
-                  <p class="item_price">100 PHP</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="item.html">
-                <div class="store_item_card">
-                  <img src="imgs/angels.jpg" class="itemimg">
-                  <span class="item_name">item name</span><br>
-                  <p class="item_price">100 PHP</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="#">
-              <div class="store_item_card">
-                <img src="imgs/angels.jpg" class="itemimg">
-                <span class="item_name">item name</span><br>
-                <p class="item_price">100 PHP</p>
-              </div>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 storeitems">
-              <a href="#">
-              <div class="store_item_card">
-                <img src="imgs/angels.jpg" class="itemimg">
-                <span class="item_name">item name</span><br>
-                <p class="item_price">100 PHP</p>
-              </div>
-              </a>
+
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img src="imgs/angels.jpg" class="item_image">
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="item_deails">
+              <h2 class="item_page_name">Angels Condensada</h2>
+              <hr>
+              <h6 class="item_page_price">₱ 93.00</h6>
+              <h6 class="product__description__header">Product description</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
           </div>
+          <div class="col-12 col-lg-3">
+            <div class="addtocart_col">
+              <h6>₱ 93.00</h6>
+              <select class="browser-default custom-select">
+                <option selected>Quantity</option>
+                <!-- For loop to max my suggestion is 30 -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <button type="button" class="btn btn-add">Add to Cart</button>
+            </div>
+            <div class="share_item">
+              <span class="ml-3">Share on: </span><a href="#"><i class='ml-1 fab fa-facebook-messenger'></i></a><a href="#"><i class='ml-1 fab fa-facebook'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produscts in the same categories -->
+        <h5 class="text-center">Similar Products</h5>
+        <div class="row similar__stores store">
+          <div class="col-6 col-md-4 col-lg-3 storeitems">
+            <a href="item.html">
+              <div class="store_item_card">
+                <img src="imgs/angels.jpg" class="itemimg">
+                <span class="item_name">item name</span><br>
+                <p class="item_price">100 PHP</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 storeitems">
+            <a href="#">
+            <div class="store_item_card">
+              <img src="imgs/angels.jpg" class="itemimg">
+              <span class="item_name">item name</span><br>
+              <p class="item_price">100 PHP</p>
+            </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 storeitems">
+            <a href="#">
+            <div class="store_item_card">
+              <img src="imgs/angels.jpg" class="itemimg">
+              <span class="item_name">item name</span><br>
+              <p class="item_price">100 PHP</p>
+            </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 storeitems">
+            <a href="#" data-toggle="modal" data-target="#item_detail_modal">
+              <div class="store_item_card">
+                <img src="imgs/angels.jpg" class="itemimg">
+                <span class="item_name">item name</span><br>
+                <p class="item_price">100 PHP</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 storeitems">
+            <a href="#" data-toggle="modal" data-target="#item_detail_modal">
+              <div class="store_item_card">
+                <img src="imgs/angels.jpg" class="itemimg">
+                <span class="item_name">item name</span><br>
+                <p class="item_price">100 PHP</p>
+              </div>
+            </a>
+          </div>
+        </div>
         </div>
       </section>
 
     </main>
-    </section>
 
     <!-- Content -->
 

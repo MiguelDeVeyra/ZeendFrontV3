@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Icon -->
     <link rel="icon" href="imgs/logo.png">
 
@@ -23,27 +24,61 @@
   <body>
 
     <!-- Header Section -->
-    <nav class="mb-1 navbar mainnav navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar mainnav navbar-expand-lg navbar-light sticky-top">
       <a class="navbar-brand" href="#"><img src="imgs/logo5.png" alt="" height="55px;" class="nav__logo"></a>
+      <!-- Notification on movile -->
+      <div class="dropdleft d-block d-md-none">
+        <a href="#" class="btn bell waves-effect reg" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-bell" aria-hidden="true"></i> <span class="badge">1</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Notification here</a>
+          <a class="dropdown-item" href="#">Another notification here</a>
+          <a class="dropdown-item" href="#">Another notification here</a>
+        </div>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
         aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mr-3" id="navbarSupportedContent-4">
+      <div class="collapse navbar-collapse mr-3 align-items-end" id="navbarSupportedContent-4">
         <ul class="navbar-nav ml-auto flex-col">
-          <li class="nav-item mr-5">
+          <!-- <li class="nav-item mr-5">
             <a href="#" class="btn waves-effect reg">SELL ON ZEEND</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="btn waves-effect reg">CART <i class="fa fa-shopping-cart ml-1" aria-hidden="true"></i><span class="badge">0</span></a>
-          </li>
-          <li class="nav-item">
+
+          if user us not authenticated -->
+          <!-- <li class="nav-item">
             <a href="#" class="btn waves-effect reg">LOG IN</a>
           </li>
           <li class="nav-item">
             <a href="#" class="btn waves-effect high">SIGN UP</a>
+          </li> -->
+
+          <!-- if user is authenticated -->
+          <li class="nav-item d-none d-md-block">
+            <!-- Desktop Navbar -->
+            <div class="dropdown">
+              <a href="#" class="btn waves-effect reg " data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bell" aria-hidden="true"></i> <span class="badge">1</span>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Notification here</a>
+                <a class="dropdown-item" href="#">Another notification here</a>
+                <a class="dropdown-item" href="#">Another notification here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn waves-effect reg"> <img src="imgs/angels.jpg" height="25px"> Emperor Miguel</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn waves-effect high">Log Out</a>
           </li>
         </ul>
+
       </div>
     </nav>
     <!-- Header Section -->
@@ -53,120 +88,80 @@
       <!-- Regions Section section -->
       <section id="main_cont">
         <div class="container">
-          <div class="bc-icons-2 d-none d-sm-block">
+          <!-- breadcrumb -->
+          <div class="bc-icons-2">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a class="btn btn-crumb waves-effect" href="region.html">
-                    Philippines
-                    <span class="badge">17</span>
+                  <a class="btn btn-crumb waves-effect" href="profile.html">
+                    Profile
                   </a>
-                  <i class="fas fa-angle-right mx-2"aria-hidden="true"></i>
-                </li>
-                <li class="breadcrumb-item">
-                  <a class="btn btn-crumb waves-effect" href="city_town.html">
-                    Region
-                    <span class="badge">3</span>
+                  <i class="fas fa-angle-right mx-1"aria-hidden="true"></i>
+                  <a class="btn btn-crumb waves-effect" href="Wallet.html">
+                    Wallet
                   </a>
-                  <i class="fas fa-angle-right mx-2"aria-hidden="true"></i>
-                </li>
-                <li class="breadcrumb-item">
-                  <a class="btn btn-crumb waves-effect" href="province.html">
-                    Province
-                    <span class="badge">3</span>
-                  </a>
-                  <i class="fas fa-angle-right mx-2"aria-hidden="true"></i>
-                </li>
-                <li class="breadcrumb-item">
-                  <a class="btn btn-crumb waves-effect" href="city_stores_all_categ.html">
-                    city
-                    <span class="badge">3</span>
-                  </a>
+
                 </li>
               </ol>
             </nav>
           </div>
-          <div class="d-block d-sm-none">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="province.html">Region</a></li>
-                <li class="breadcrumb-item"><a href="city.html">City</a></li>
-              </ol>
-            </nav>
-          </div>
-          <h6 class="text-center my-4 slct__reg">Choose a Category in <span class="text-success">City</span>! </h6>
-          <div class="cat__chooser">
-            <a href="city_stores_all_categ.html" type="button" class="btn cat waves-effect">All Stores</a>
-            <a href="categories.html" type="button" class="btn cat active waves-effect">Categories</a>
-            <a href="others_categ.html" type="button" class="btn cat waves-effect">Others</a>
-          </div>
+          <!-- wallet content -->
+
           <div class="row">
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <a href="city_stores.html">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
+            <div class="col-12 col-lg-4">
+              <h1 class="wallet_header"> <span class="text-success">Zeend</span> Wallet</h1>
+              <div class="card wallet_card">
+                <h5 class="wallet_balance"> 0.00</h5>
+                <span class="php_avail_bal">Available balance</span>
+                <div class="wallet_card_add">
+                  <a type="button" class="btn btn-light load_walelt" href="wallet_history.html">Wallet History</a>
                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <h3 class="deposit_header">Deposit</h3>
+              <div class="card deposit_card">
+                <select class="browser-default custom-select" name="customAmount" onchange='CheckDeposit(this.value);'>
+                  <option>Choose Amount</option>
+                  <option value="500">500.00 PHP</option>
+                  <option value="1000">1000.00 PHP</option>
+                  <option value="2000">2000.00 PHP</option>
+                  <option value="5000">5000.00 PHP</option>
+                  <option value="custom_amount">Input Amount</option>
+                </select>
+                <input type="number" name="customAmount" id="customAmount" style='display:none;'
+                class="form-control mt-2" placeholder="0.00 PHP">
+                <div class="wallet_infos">
+                  <p>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Wallet can only be used within Zeend platform,
+                    and it is not transferable, nor withdrawable.
+                    Minimum wallet loading is ₱ 500.00
+                  </p>
+                  <p>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    For International Debit/Credit Card usage, click the   PayPal
+                    button. A form will pop out. Scroll down and click the
+                    Pay with Debit or Credit Card   button.
+                  </p>
+                </div>
+                <a type="button" class="btn btn-dark">
+                  <img src="imgs/drag_white.png" class="white_dragon">
                 </a>
+                <button type="button" class="btn btn-warning">
+                  <img src="imgs/pay.png" class="white_dragon">
+
+                </button>
+                <button type="button" class="btn btn-dark">
+                  <div class="debit_credit">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Debit or Credit Card
+                  </div>
+                </button>
+
               </div>
             </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="view zoom">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="zoom">
-                <div class="mask flex-center waves-effect waves-light">
-                  <p class="white-text">Category</p>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -321,5 +316,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/master.js"></script>
   </body>
 </html>

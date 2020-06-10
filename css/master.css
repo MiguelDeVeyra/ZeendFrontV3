@@ -73,6 +73,10 @@ html,body
   font-family: "Poppins";
 }
 
+.mob__header{
+  margin-top: 20%;
+}
+
 
 /* main mobile css */
 .main{
@@ -849,6 +853,15 @@ footer.page-footer a{
   color: #FFF!important;
   margin-right: 1em;
 }
+.storefoot{
+  margin-left: 20vw;
+}
+
+@media (min-width:1000px) {
+  .storefoot{
+    margin-left: 10vh;
+  }
+}
 
 @media (max-width:1050px) {
   .sidebar-sticky{
@@ -1138,7 +1151,7 @@ footer.page-footer a{
   margin-top: 10%;
 } */
 .modal_btns_item_deets{
-  float: right;
+  margin-left: 60%;
 }
 
 .total__modal{
@@ -1170,10 +1183,7 @@ footer.page-footer a{
 }
 
 @media (min-width:1101px) {
-  .modal_btns_item_deets{
-    margin-top: 8vh;
-    margin-right: 10%;
-  }
+
   .plusminusbtn{
     border: none;
     border-radius: 5px;
@@ -1300,6 +1310,579 @@ footer.page-footer a{
     margin: 0px!important;
   }
 }
+
+/* product page css */
+
+.item_image{
+  max-height: 50vh;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item_page_name{
+  font-size: 1.8em;
+}
+
+.item_page_price{
+  font-size: 2em!important;
+  color: red;
+}
+
+.item_description{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product__description__header{
+  font-size: 1.3em;
+  margin-top: 2vh!important;
+  font-weight: bold;
+}
+
+.detailed__product__description{
+  font-size: .8em;
+  font-weight: bold;
+}
+
+@media (min-width:1020px) {
+  .item_page_name{
+    font-size: 2.3em;
+  }
+  .item_page_price{
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .product__description__header{
+    font-size: 1.6em;
+  }
+  .detailed__product__description{
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 40%;
+  }
+  .item_image{
+    max-width: 320px;
+  }
+}
+
+
+.addtocart_col{
+  padding: 20px;
+}
+
+.item_deails{
+  padding: 20px;
+}
+
+.btn.btn-add{
+  display: block;
+  width: 100%;
+  margin-top: 10px!important;
+  margin: 0 auto;
+  background: orange;
+}
+
+.share_item{
+  padding: 20px;
+}
+
+.similar__stores{
+  padding: 20px;
+}
+
+
+
+
+
+/* Profile CSS */
+
+.prof_details{
+
+}
+
+.prof_details img{
+  max-height: 90px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.list-group.profile{
+  margin-top: 0!important;
+}
+
+.user_name{
+  font-size: 1.2em;
+}
+
+.account_number{
+  font-size: .8em;
+  font-weight: lighter;
+}
+
+
+/* WAllet CSS */
+
+.card.wallet_card{
+  border: 0.05em solid #f2f2f2;
+  padding: 10px;
+  margin: 0;
+  text-align: inherit;
+  width: 100%;
+  background: #F2f2f2;
+  height: 23vh;
+}
+
+.wallet_header{
+  font-size: 1.7em;
+  text-align: center;
+  font-family: 'Poppins';
+
+}
+
+.wallet_balance{
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 1.8em;
+  margin-bottom: 0!important;
+}
+
+.php_avail_bal{
+  font-size: .6em!important;
+  padding-left: 10px;
+}
+
+.wallet_card_add{
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.btn.load_walelt{
+  margin: 0!important;
+}
+
+.card.deposit_card{
+  border: 0.05em solid #f2f2f2;
+  padding: 10px;
+  margin: 0;
+  text-align: inherit;
+  width: 100%;
+  background: #F2f2f2;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.wallet_infos p{
+  font-size: 0.7em;
+  margin: 10px;
+}
+
+.deposit_header{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.white_dragon{
+  height: 35px
+}
+
+.debit_credit{
+  padding: 8px;
+}
+
+.btn.sendbtn{
+  margin-right: 0;
+}
+
+
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #546E7A;
+}
+.wrapper {
+	max-width: 18rem;
+	padding: 0 0.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4rem;
+}
+label {
+	font-size: 0.75rem;
+	font-weight: 400;
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #B0BEC5;
+	border: 1px solid #ECEFF1;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.5rem;
+}
+input {
+	font-family: 'Roboto', sans-serif;
+	display:block;
+	border: none;
+	border-radius: 0.25rem;
+	border: 1px solid transparent;
+	line-height: 1.5rem;
+	padding: 0;
+	font-size: 1rem;
+	color: #607D8B;
+	width: 100%;
+	margin-top: 0.5rem;
+}
+input:focus {outline: none;}
+#ui-datepicker-div {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+	margin-top: 0.25rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+	padding: 0.25rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+	width: 2.5rem;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	transition: 0.3s all;
+	color: #546E7A;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+	background-color: #E0F2F1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: #009688;
+	color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+	transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+	left: 0;
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-size: 0.5rem;
+	background-position: 50%;
+	transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	right: 0;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+	color: #78909C;
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+
+
+.history_card{
+  background: #F2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.date_from{
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.custom-select.select_transaction{
+  padding: 8px;
+  margin-top: 4%;
+  display: block;
+  margin-right: 3%;
+}
+
+
+/* wishlist */
+
+.card.gencard{
+  border: 0.05em solid #f2f2f2;
+  padding: 10px;
+  margin: 0;
+  text-align: inherit;
+  width: 100%;
+  background: #F2f2f2;
+}
+
+.wishlists_received_hedaer{
+  display: inline-block;
+}
+.wishlists_rec{
+
+}
+.wishlists_rec img{
+  max-height: 25px;
+  max-width: 25px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+
+.wishlists_rec p{
+  font-size: 1.2em;
+}
+.btn.view{
+  padding: 8px;
+  margin: 0;
+}
+
+
+.btn.payment_history{
+  float: right;
+  margin-right: 0;
+  margin-bottom: 5%;
+  font-size: 0.8em;
+}
+
+.pay_bills_header{
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #09BB00;
+  border-radius: 5px;
+}
+
+.btn.btn-crumb{
+  margin: 0!important;
+}
+
+
+.table.table_history_bills{
+  overflow-y: auto;
+}
+
+/* messages */
+
+.usr_chat_head{
+  max-height: 50px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.list-group-item.messeage_box{
+  height: relative;
+}
+
+
+.message_peek{
+  font-size: 0.9em;
+}
+
+
+.list-group.messages{
+  margin-top: 10px;;
+}
+
+.messages_header{
+  margin-left: 3%;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+
+/* Direct Message CSS */
+
+.card.gencard.dm-card{
+  min-height: 60vh;
+  overflow-y: auto;
+  max-height: 50vh!important;
+}
+
+.sender{
+  border: 0.001em solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.message_conetents_sender{
+  display: block;
+}
+
+.sender_name{
+  font-weight: bold;
+}
+
+.sender img{
+  max-height: 50px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.sender p{
+  font-size: 0.7em;
+}
+
+.time_dm_message{
+  float: right;
+}
+
+.receiver{
+  border: 0.001em solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+.message_conetents_receiver{
+  display: block;
+}
+.receiver img{
+  max-height: 50px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.receiver p{
+  font-size: 0.8em;
+}
+
+.time_dm_message_rec{
+  float: left;
+  font-size: 0.7em;
+}
+
+.send_input{
+  margin-top: auto!important;
+  position: sticky;
+}
+
+@media (min-width:998px) {
+  .receiver{
+    border: 0.001em solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    max-width: 60%;
+  }
+  .sender{
+    border: 0.001em solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
