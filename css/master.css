@@ -1894,11 +1894,25 @@ table {
   margin-left: 5px;
 }
 
+.btn.save_btn_acc{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  float: right;
+}
 
+.uploaded_pic{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 150px;
+}
 
-
-
-
+.btn.upload_pic_btn{
+  font-size: 0.7em;
+  padding: 8px 6px;
+  margin-left: 0;
+}
 
 
 
