@@ -126,70 +126,87 @@
               </div>
             </div>
             <div class="col-12 col-lg-4 offset-lg-2">
-              <div class="card gencard">
-                <h6>Connection Request</h6>
+              <div class="card gencard con_card">
+                <h6 class="con_req_header">Connection Request</h6>
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th class="table_header">Name</th>
+                      <th class="table_header">Date</th>
+                      <th class="table_header">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
                       <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                     <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <div class="card gencard">
-                <h6>Sent Request</h6>
-                <table class="table">
+              <div class="card gencard con_card">
+                <h6 class="sent_req_header">Sent Request</h6>
+                <table class="table ">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th class="table_header">Name</th>
+                      <th class="table_header">Date</th>
+                      <th class="table_header">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
                       <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                     <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>dd/mm/yyyy</td>
+                      <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -198,20 +215,48 @@
           </div>
           <div class="col-12 col-lg-8 offset-lg-2">
             <h1 class="wallet_header">Connections</h1>
-            <div class="card gencard mb-5">
-              <small>
-                <i class="fa fa-info-circle text-success"></i>
-                This feature is only for your personal wishlist where you can add connections so they can
-                Pay in behalf of you for what items you have in your cart .
-                Please only Add, Accept accounts you acknowledge.
-                You can Decline or Remove a connection request if you wish.
-              </small>
-              <div class="input-group mt-3">
-                 <input type="text" class="form-control" placeholder="EX.CA10003512">
-                 <span class="input-group-btn">
-                      <button class="btn btn-success" type="button">Connect </button>
-                 </span>
-              </div>
+            <div class="card gencard mb-5 con_card">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Account Number</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                  <tr>
+                    <th>Larry</th>
+                    <td>#012934</td>
+                    <td class="table_action_connection"><button type="button" class="btn btn-info view_connection">View</button></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -232,7 +277,7 @@
 
             <!-- Content -->
             <div class="dl__cont mb-2">
-                <img src="imgs/logomerch.png" alt="" height="50px"> <span class="dl__head">Download the App</span>
+                <img src="imgs/zlogo.png" alt="" height="50px"> <span class="dl__head">Download the App</span>
             </div>
             <a href="#"><img src="imgs/avail.svg" alt="" height="35px" class="mr__dl"></a><a href="#"><img src="imgs/andr.png" alt="" height="35px"></a>
           </div>

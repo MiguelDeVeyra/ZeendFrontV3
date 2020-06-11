@@ -1836,28 +1836,63 @@ table {
   }
 }
 
+/* connection */
+
+.btn.view_connection{
+  margin-top: 0!important;
+}
+
+.table_action_connection{
+  padding-top: 0.5em!important;
+}
 
 
+.table_header{
+  font-weight: bold;
+}
 
 
+.con_req_header{
+  font-weight: bold;
+}
 
+.sent_req_header{
+  font-weight: bold;
+}
 
+.card.con_card{
+  height: 40vh;
+  overflow-y: auto;
+}
 
+/* Account Settings */
 
+.btn.acc_btns{
+  margin-left: 0;
+  padding: 8px;
+}
 
+.acc_form{
+  padding: 8px;
+  padding-top: 3px!important;
+}
 
+@media (min-width:998px) {
+  .acc_form{
+    padding: 20px;
+  }
+}
 
+.card_header_acc_sett{
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
+.btn.chang_email{
+  padding: 8px;
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 5px;
+}
 
 
 

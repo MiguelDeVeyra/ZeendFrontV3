@@ -98,36 +98,76 @@
                   </a>
                   <i class="fas fa-angle-right mx-1"aria-hidden="true"></i>
                   <a class="btn btn-crumb waves-effect" href="wishlist.html">
-                    Wishlist
+                    Settings
                   </a>
-
                 </li>
               </ol>
             </nav>
           </div>
-          <!-- wallet content -->
 
           <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
-              <h1 class="wallet_header">Pay Bills</h1>
-              <button type="button" class="btn btn-success waves-effect payment_history">Payment history</button>
-              <div class="card gencard">
-                <h6 class="pay_bills_header">Welcome to Zeend Bills. Make sure to enter correct billing information.</h6>
-                <select class="browser-default custom-select" name="customAmount" onchange='CheckBill(this.value);'>
-                  <option>Choose Amount</option>
-                  <option value="custom_amount">LEYECO 2</option>
-                </select>
-                <input type="number" name="customAmount" id="customAmount" style='display:none;'
-                class="form-control mt-2" placeholder="Account Number">
-                <input type="number" name="customAmount" id="customAmount1" style='display:none;'
-                class="form-control mt-2" placeholder="Meter Number">
-                <button type="button" class="btn btn-success btn-block mt-4">Success</button>
-                <button type="button" class="btn btn-light btn-block mt-1 mb-2">Reset</button>
+              <h1 class="wallet_header">Settings</h1>
+              <a href="#" class="btn btn-light acc_btns">Contacts</a><a href="#" class="btn btn-light acc_btns">Change Password</a>
+              <div class="card gencard mt-3">
+                <h6 class="card_header_acc_sett">Account Settings</h6>
+                <form class="acc_form" action="#!">
+                  <!-- First name -->
+                  <small class="form-text text-muted mb-2">First name</small>
+                  <input type="text" class="form-control" placeholder="First name">
+                  <!-- Middle anme -->
+                  <small class="form-text text-muted mb-2">Middle Name</small>
+                  <input type="email" class="form-control" placeholder="E-mail">
+                  <!-- Last name -->
+                  <small class="form-text text-muted mb-2">Last name</small>
+                  <input type="text" class="form-control" placeholder="Last name">
+                  <!-- Gender -->
+                  <small class="form-text text-muted mb-2">Gender</small>
+                  <select class="browser-default custom-select">
+                    <option selected>Please select your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                  <!-- BirthDate -->
+                  <small class="form-text text-muted mb-2">
+                     Date of Birth
+                  </small>
+                  <input type="date" class="form-control" placeholder="Date of Birth">
+                  <!-- Username -->
+                  <small class="form-text text-muted mb-2">Username</small>
+                  <input type="text" class="form-control" placeholder="Username">
+                  <!-- Confirm change with password -->
+                  <small class="form-text text-muted mb-2">Confirm change with Password</small>
+                  <input type="password" class="form-control" placeholder="Password">
+                </form>
               </div>
-
             </div>
-
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <div class="card gencard">
+                <h6 class="card_header_acc_sett">Contacts</h6>
+                <small class="form-text text-muted">Email Address</small>
+                <div class="input-group">
+                   <input type="text" class="form-control" placeholder="email">
+                   <span class="input-group-btn">
+                        <button class="btn btn-success chang_email" type="button">Change</button>
+                   </span>
+                   <span class="input-group-btn">
+                        <button class="btn btn-success chang_email" type="button">Verify</button>
+                   </span>
+                </div>
+                <small class="form-text text-muted mt-3">Mobile number</small>
+                <div class="input-group">
+                   <input type="number" class="form-control" placeholder="0998-xxx-xxxx">
+                   <span class="input-group-btn">
+                        <button class="btn btn-success chang_email" type="button">Change</button>
+                   </span>
+                   <span class="input-group-btn">
+                        <button class="btn btn-success chang_email" type="button">Verify</button>
+                   </span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -146,7 +186,7 @@
 
             <!-- Content -->
             <div class="dl__cont mb-2">
-                <img src="imgs/logomerch.png" alt="" height="50px"> <span class="dl__head">Download the App</span>
+                <img src="imgs/zlogo.png" alt="" height="50px"> <span class="dl__head">Download the App</span>
             </div>
             <a href="#"><img src="imgs/avail.svg" alt="" height="35px" class="mr__dl"></a><a href="#"><img src="imgs/andr.png" alt="" height="35px"></a>
           </div>
