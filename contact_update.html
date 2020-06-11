@@ -107,39 +107,25 @@
 
           <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
-              <h1 class="wallet_header">Settings</h1>
-              <a href="contact_update.html" class="btn btn-light acc_btns">Contacts</a><a href="change_password.html" class="btn btn-light acc_btns">Change Password</a>
+              <h1 class="wallet_header">Contacts</h1>
+              <a href="account_settings.html" class="btn btn-light acc_btns">General</a><a href="change_password.html" class="btn btn-light acc_btns">Change Password</a>
               <div class="card gencard mt-3">
-                <h6 class="card_header_acc_sett">Account Settings</h6>
+                <h6 class="card_header_acc_sett">Contact Information Settings</h6>
                 <form class="acc_form" action="#!">
-                  <img src="imgs/default_dp.jpg" alt="" class="uploaded_pic"> <br>
-                  <button type="button" class="btn btn-light upload_pic_btn">Upload Picture</button>
-                  <!-- First name -->
-                  <small class="form-text text-muted mb-2 mt-3">First name</small>
-                  <input type="text" class="form-control" placeholder="First name">
-                  <!-- Middle anme -->
-                  <small class="form-text text-muted mb-2 mt-3">Middle Name</small>
-                  <input type="email" class="form-control" placeholder="Middle Name">
-                  <!-- Last name -->
-                  <small class="form-text text-muted mb-2 mt-3">Last name</small>
-                  <input type="text" class="form-control" placeholder="Last name">
-                  <!-- Gender -->
-                  <small class="form-text text-muted mb-2 mt-3">Gender</small>
-                  <select class="browser-default custom-select">
-                    <option selected>Please select your gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                  </select>
-                  <!-- BirthDate -->
-                  <small class="form-text text-muted mb-2 mt-3">
-                     Date of Birth
-                  </small>
-                  <input type="date" class="form-control" placeholder="Date of Birth">
-                  <!-- Username -->
-                  <small class="form-text text-muted mb-2 mt-3">Username</small>
-                  <input type="text" class="form-control" placeholder="Username">
+                  <!-- email -->
+                  <small class="form-text text-muted mb-2 mt-3">EMAIL</small>
+                  <input type="text" class="form-control" placeholder="example@gmail.com">
+                  <!-- Phone number -->
+                  <small class="form-text text-muted mb-2 mt-3">Phone Number</small>
+                  <input type="email" class="form-control" placeholder="0998-xxx-xxxx">
+                  <!-- Phone number -->
+
+                  <div class="form-group">
+                    <small class="form-text text-muted mb-2 mt-3">Address</small>
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  </div>
                   <!-- Confirm change with password -->
-                  <small class="form-text text-muted mb-2 mt-3">Confirm change with Password</small>
+                  <small class="form-text text-muted mb-2">Confirm change with Password</small>
                   <input type="password" class="form-control" placeholder="Password">
                   <button type="button" name="button" class="btn btn-info save_btn_acc mt-3">Save</button>
                 </form>
